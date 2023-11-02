@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+body{
+    background: linear-gradient(to bottom right ,rgb(64, 0, 116) , rgb(95, 10, 88));
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 350px;
+    height: 600px;
+    background-color: #061116;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   box-shadow: 0 0 20px #d6d1d1;
+   
+}
+.dark-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    cursor: pointer;
+   margin-bottom: -50px;
+}
+.dark{
+    color: aliceblue;
+}
+.display{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    bottom: -140px;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.display::-webkit-scrollbar{
+    display: block;
+    height: 3px;
+}
+button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover  {
+    transform: scale(1.15);
+}
+.dark .op  {
+    background-color:#2C2139 ;
+    color: #6D176A ;
+}
+.dark .op-clear {
+    background-color:#2E1C22 ;
+    color: #7D2C3F ;
+    font-weight: 600;
+}
+.dark .num {
+    background-color:#1E2D33 ;
+    color: #E4F3F5 ;
+}
+/*no-dark*/
+.dark.active{
+    color: #061116;
+}
+.container.active .dark-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #353535;
+}
+#equal{
+    background-color: #1F2F21;
+    color: aliceblue;
+position: relative;
+bottom: 140px;
+left: 224px;
+height: 120px;
+}
+.button-container{
+    position: relative;
+    bottom: -120px;
+}
+.dark.active .op  {
+    background-color:#FFD2FC  ;
+    color: #EF90E0 ;
+}
+.dark.active #equal{
+    background-color: #9EE4D4;
+    color: #061116;
+}
+.dark.active .op-clear {
+    background-color:#FFD5DA ;
+    color: #D07280 ;
+    font-weight: 600;
+}
+.dark.active .num {
+    background-color:#C4EAFC ;
+    color: #233F4D ;
+}
+.container.active{
+    width: 350px;
+    height: 600px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   box-shadow: 0 0 20px rgb(32, 32, 32);
+
+}
